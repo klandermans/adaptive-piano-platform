@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Piano Platform</title>
+  <script src="https://unpkg.com/vexflow@4.2.5/build/cjs/vexflow.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎹 Adaptive Piano Platform</h1>
+    <div id="midi-status" class="status-badge disconnected">
+      <span class="status-dot"></span>
+      <span class="status-text">MIDI Disconnected</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sheet Music Display -->
+    <section id="sheet-music" class="card">
+      <h2>Sheet Music</h2>
+      <div id="vexflow-container"></div>
+    </section>
+
+    <!-- Real-time Feedback -->
+    <section id="feedback" class="card">
+      <h2>Live Feedback</h2>
+      <div class="feedback-grid">
+        <div class="feedback-item" id="feedback-note">
+          <span class="feedback-label">Note Correct</span>
+          <span class="feedback-value" id="val-note">—</span>
+        </div>
+        <div class="feedback-item" id="feedback-timing">
+          <span class="feedback-label">Timing</span>
+          <span class="feedback-value" id="val-timing">—</span>
+        </div>
+        <div class="feedback-item" id="feedback-sync">
+          <span class="feedback-label">Hand Sync</span>
+          <span class="feedback-value" id="val-sync">—</span>
+        </div>
+        <div class="feedback-item">
+          <span class="feedback-label">Delta</span>
+          <span class="feedback-value" id="val-delta">—</span>
+        </div>
+      </div>
+      <div id="wait-mode-indicator" class="wait-mode hidden">
+        ⏸ Wait Mode Active — Play the correct notes to continue
+      </div>
+      <div id="lesson-complete-indicator" class="lesson-complete hidden">
+        🎉 Lesson Complete!
+      </div>
+    </section>
+
+    <!-- Expected vs Played -->
+    <section id="comparison" class="card">
+      <h2>Expected vs Played</h2>
+      <div class="comparison-grid">
+        <div class="comparison-column">
+          <h3>Expected</h3>
+          <div id="expected-notes" class="notes-display">No notes expected yet</div>
+        </div>
+        <div class="comparison-column">
+          <h3>Played</h3>
+          <div id="played-notes" class="notes-display">No notes played yet</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Piano Visual -->
+    <section id="piano" class="card">
+      <h2>Piano</h2>
+      <div id="piano-keys"></div>
+    </section>
+
+    <!-- Controls -->
+    <section id="controls" class="card">
+      <h2>Controls</h2>
+      <div class="controls-grid">
+        <div class="control-group">
+          <label>Lesson</label>
+          <select id="lesson-select">
+            <option value="twinkle-twinkle">Twinkle Twinkle Little Star</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label>Tempo: <span id="bpm-display">120</span> BPM</label>
+          <input type="range" id="bpm-slider" min="40" max="200" value="120">
+        </div>
+        <div class="control-group">
+          <label>Timing Tolerance: <span id="tolerance-display">150</span>ms</label>
+          <input type="range" id="tolerance-slider" min="50" max="500" value="150">
+        </div>
+        <div class="control-group">
+          <label>
+            <input type="checkbox" id="wait-mode-toggle" checked>
+            Wait Mode
+          </label>
+        </div>
+        <div class="control-group">
+          <label>Scaffolded Play</label>
+          <div class="scaffold-buttons">
+            <button id="mute-left" class="btn-secondary">Mute Left Hand</button>
+            <button id="mute-right" class="btn-secondary">Mute Right Hand</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="transport-controls">
+            <button id="btn-reset" class="btn-primary">↺ Reset</button>
+            <button id="btn-play" class="btn-primary">▶ Play</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telemetry -->
+    <section id="telemetry" class="card">
+      <h2>Telemetry Log</h2>
+      <div id="telemetry-log" class="telemetry-log"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Adaptive Piano Platform &middot; Built with Web MIDI API + VexFlow + Vanilla JS</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
