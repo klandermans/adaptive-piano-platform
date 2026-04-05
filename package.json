@@ -1,0 +1,17 @@
+{
+  "name": "adaptive-piano-platform",
+  "version": "0.1.0",
+  "description": "Browser-based, data-driven piano learning environment with real-time MIDI evaluation",
+  "type": "module",
+  "main": "src/Evaluator.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  },
+  "keywords": ["piano", "midi", "music-education", "evaluator"],
+  "license": "MIT"
+}

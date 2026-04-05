@@ -1,0 +1,134 @@
+{
+  "id": "lesson-001",
+  "title": "Twinkle Twinkle Little Star - Two Hands",
+  "bpm": 120,
+  "timeSignature": 4,
+  "notes": [
+    {
+      "timestamp": 0,
+      "duration": 500,
+      "midiValue": 60,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 1,
+      "beat": 1
+    },
+    {
+      "timestamp": 0,
+      "duration": 500,
+      "midiValue": 48,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 1,
+      "beat": 1
+    },
+    {
+      "timestamp": 500,
+      "duration": 500,
+      "midiValue": 60,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 1,
+      "beat": 2
+    },
+    {
+      "timestamp": 500,
+      "duration": 500,
+      "midiValue": 48,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 1,
+      "beat": 2
+    },
+    {
+      "timestamp": 1000,
+      "duration": 500,
+      "midiValue": 67,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 1,
+      "beat": 3
+    },
+    {
+      "timestamp": 1000,
+      "duration": 500,
+      "midiValue": 55,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 1,
+      "beat": 3
+    },
+    {
+      "timestamp": 1500,
+      "duration": 500,
+      "midiValue": 67,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 1,
+      "beat": 4
+    },
+    {
+      "timestamp": 1500,
+      "duration": 500,
+      "midiValue": 55,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 1,
+      "beat": 4
+    },
+    {
+      "timestamp": 2000,
+      "duration": 500,
+      "midiValue": 69,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 2,
+      "beat": 1
+    },
+    {
+      "timestamp": 2000,
+      "duration": 500,
+      "midiValue": 57,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 2,
+      "beat": 1
+    },
+    {
+      "timestamp": 2500,
+      "duration": 500,
+      "midiValue": 69,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 2,
+      "beat": 2
+    },
+    {
+      "timestamp": 2500,
+      "duration": 500,
+      "midiValue": 57,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 2,
+      "beat": 2
+    },
+    {
+      "timestamp": 3000,
+      "duration": 1000,
+      "midiValue": 67,
+      "velocity": 80,
+      "hand": "R",
+      "measure": 2,
+      "beat": 3
+    },
+    {
+      "timestamp": 3000,
+      "duration": 1000,
+      "midiValue": 55,
+      "velocity": 60,
+      "hand": "L",
+      "measure": 2,
+      "beat": 3
+    }
+  ]
+}
